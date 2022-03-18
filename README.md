@@ -8,22 +8,22 @@
 | encrypted_password | string              | null: false               |
 | name               | string              | null: false               |
 | profile            | text                | null: false               |
-| occupation         | text                | null: false               |
-| position           | text                | null: false               |
+| my_bike            | string              | null: false               |
+| residence          | text                | null: false               |
 
 ### Association
 
-* has_many :prototypes
+* has_many :bikes
 * has_many :comments
 
-## prototypes table
+## bikes table
 
-| Column                              | Type       | Options                        |
-|-------------------------------------|------------|--------------------------------|
-| title                               | string     | null: false                    |
-| catch_copy                          | text       | null: false                    |
-| concept                             | text       | null: false                    |
-| user                                | references | null: false, foreign_key: true |
+| Column             | Type       | Options                          |
+|-----------------------------------------------------------------|
+| title              | string     | null: false                   |
+| catch_copy         | text       | null: false                   |
+| concept            | text       | null: false                   |
+| user               | references | null: false, foreign_key: true|
 
 ### Association
 
@@ -35,10 +35,10 @@
 | Column      | Type       | Options                        |
 |-------------|------------|--------------------------------|
 | content     | text       | null: false                    |
-| prototype   | references | null: false, foreign_key: true |
+| bike        | references | null: false, foreign_key: true |
 | user        | references | null: false, foreign_key: true |
 
-### Association
+### Association…
 
-- belongs_to :prototype
+- belongs_to :bikes
 - belongs_to :user

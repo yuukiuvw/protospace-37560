@@ -1,2 +1,2 @@
-module PrototypesHelper
+module BikesHelper
 end

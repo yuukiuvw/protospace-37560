@@ -6,10 +6,10 @@ class User < ApplicationRecord
         
          validates :name, presence: true
          validates :profile, presence: true
-         validates :occupation, presence: true
-         validates :position, presence: true
+         validates :my_bike, presence: true
+         validates :residence, presence: true
 
          has_many :comments
-         has_many :prototypes
+         has_many :bikes
 
 end

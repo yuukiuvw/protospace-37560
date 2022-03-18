@@ -1,6 +1,6 @@
 class Comment < ApplicationRecord
   belongs_to :user
-  belongs_to :prototype
+  belongs_to :bike
 
   validates :content, presence: true
 end

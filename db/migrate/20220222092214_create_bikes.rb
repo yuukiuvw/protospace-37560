@@ -1,6 +1,6 @@
-class CreatePrototypes < ActiveRecord::Migration[6.0]
+class CreateBikes < ActiveRecord::Migration[6.0]
   def change
-    create_table :prototypes do |t|
+    create_table :bikes do |t|
 
       t.timestamps
       t.string      :title,      null: false
