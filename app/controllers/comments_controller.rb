@@ -13,6 +13,6 @@ end
 
   private
   def comment_params
-    params.require(:comment).permit(:content).merge(user_id: current_user.id, biker_id: params[:bike_id])
+    params.require(:comment).permit(:content).merge(user_id: current_user.id, bike_id: params[:bike_id])
   end
 end

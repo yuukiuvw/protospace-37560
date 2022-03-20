@@ -15,20 +15,20 @@
             <td class="table__col2"><%= @user.profile %></td>
           </tr>
           <tr>
-            <th class="table__col1">所属</th>
-            <td class="table__col2"><%= @user.occupation %></td>
+            <th class="table__col1">愛車</th>
+            <td class="table__col2"><%= @user.my_bike %></td>
           </tr>
           <tr>
-            <th class="table__col1">役職</th>
-            <td class="table__col2"><%= @user.position %></td>
+            <th class="table__col1">所在地</th>
+            <td class="table__col2"><%= @user.residence %></td>
           </tr>
         </tbody>
       </table>
       <h2 class="page-heading">
-        <%= "#{@user.name}さんのプロトタイプ"%>
+        <%= "#{@user.name}さんの投稿"%>
       </h2>
       <div class="user__card">
-        <%= render partial: 'prototypes/prototype', collection: @user.prototypes %>
+        <%= render partial: 'bikes/bike', collection: @user.bikes %>
       </div>
     </div>
   </div>

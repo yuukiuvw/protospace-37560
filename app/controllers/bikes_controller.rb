@@ -30,7 +30,7 @@ class BikesController < ApplicationController
 
   def update
     if @bike.update(bike_params)
-      redirect_to bike_path(@bikerspace)
+      redirect_to bike_path(@bike)
     else
       render :edit
     end
@@ -52,5 +52,9 @@ class BikesController < ApplicationController
 
   def set_bike
     @bike = Bike.find(params[:id])
+  end
+
+  def contributor_confirmation
+    redirect_to root_path unless current_user == @bike.user
   end
 end

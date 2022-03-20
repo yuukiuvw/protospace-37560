@@ -1,34 +1,34 @@
 <main class="main">
   <div class="inner">
-    <div class="bikespace__wrapper">
-      <p class="bikespace__hedding">
+    <div class="bikerspace__wrapper">
+      <p class="bikerspace__hedding">
         <%= @bike.title %>
       </p>
-      <%= link_to "by #{@bike.user.name}", user_path(@bike.user), class: :bikespace__user %>
+      <%= link_to "by #{@bike.user.name}", user_path(@bike.user), class: :bikerspace__user %>
       <% if current_user == @bike.user%>
-        <div class="prototype__manage">
-          <%= link_to "編集する", edit_prototype_path(@bike), class: :bikespace__btn %>
-          <%= link_to "削除する", prototype_path(@bike), method: :delete, class: :bikespace__btn %>
+        <div class="bikerspace__manage">
+          <%= link_to "編集する", edit_bike_path(@bike), class: :bikerspace__btn %>
+          <%= link_to "削除する", bike_path(@bike), method: :delete, class: :bikerspace__btn %>
         </div>
       <% end %>
       <div class="bikespace__image">
         <%= image_tag @bike.image %>
       </div>
-      <div class="bikespace__body">
-        <div class="bikespace__detail">
+      <div class="bikesrpace__body">
+        <div class="bikerspace__detail">
           <p class="detail__title">キャッチコピー</p>
           <p class="detail__message">
             <%= @bike.catch_copy %>
           </p>
         </div>
-        <div class="bikespace__detail">
+        <div class="bikerspace__detail">
           <p class="detail__title">コンセプト</p>
           <p class="detail__message">
             <%= @bike.concept %>
           </p>
         </div>
       </div>
-      <div class="bikespace__comments">
+      <div class="bikerspace__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@bike, @comment], local: true do |f|%>
             <div class="field">
