@@ -1,6 +1,6 @@
 <%= form_with model: bike, local: true do |f|%>
   <div class="field">
-    <%= f.label :title, "題名" %><br />
+    <%= f.label :title, "タイトル" %><br />
     <%= f.text_field :title %>
   </div>
 
@@ -20,6 +20,6 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "保存する", class: :form__btn  %>
+    <%= f.submit "投稿", class: :form__btn  %>
   </div>
 <% end %>

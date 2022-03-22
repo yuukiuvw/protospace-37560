@@ -37,9 +37,10 @@ a {
 /* ヘッダー */
 
 .header {
-  background-color: #f1f8fe;
+  background-color: #01060a;
   margin-bottom: 48px;
   padding: 20px 0;
+  color: white;
 
 }
 .inner {
@@ -58,23 +59,23 @@ a {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87CEFA;
+  color: white;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px white solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
 .nav__btn:hover{
   color: #fff;
-  background: #87CEFA;
+  background: white;
 }
 
 .nav__logout{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87CEFA;
+  color: white;
   text-decoration: none;
   user-select: none;
 }
@@ -178,7 +179,7 @@ a {
   text-decoration: underline;
 }
 .bikerspace__image{
-  width: 40%;
+  width:100%;
   margin: 0 auto;
   padding: 16px 0;
 }
@@ -215,7 +216,7 @@ a {
 }
 
 .bikerspace__comments{
-  background-color: #f6f6f6;
+  background-color: white;
   padding: 20px;
   margin: 28px 0 40px 0;
 }
@@ -269,7 +270,7 @@ a {
 /* フッター */
 
 .footer {
-  background-color: #999;
+  background-color: rgb(12, 1, 1);
   padding: 10px 0;
 }
 .copyright {
